@@ -1,0 +1,4 @@
+node_modules/
+.meteor/dev_bundle
+.DS_Store
+.idea/
