@@ -118,5 +118,12 @@ Template.dashboard.helpers({
 });
 
 Template.dashboard.events({
+  "submit #newLocation"(event, instance){
+    event.preventDefault();
+    // console.log("new location");
+    console.log("Lat : " + event.target.latitude.value);
+    console.log("Lon : " + event.target.longitude.value);
+  }
+
 
 });
