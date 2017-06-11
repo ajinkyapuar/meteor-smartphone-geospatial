@@ -57,11 +57,11 @@ Template.dashboard.onRendered(function() {
   ]);
 
   // Use tiles from the Standard tile layer of OpenStreetMap.
-  L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    detectRetina: true
-  }).addTo(map);
+  // L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  //   detectRetina: true
+  // }).addTo(map);
 
-  L.tileLayer.provider('Stamen.Watercolor').addTo(map);
+  L.tileLayer.provider('Stamen.Toner').addTo(map);
 
   //   var CartoDB_DarkMatterNoLabels = L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png', {
   // 	attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
@@ -118,5 +118,5 @@ Template.dashboard.helpers({
 });
 
 Template.dashboard.events({
-  
+
 });

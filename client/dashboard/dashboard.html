@@ -2,18 +2,23 @@
   <div id="dashboard">
     <div class="row">
       <div class="col s12 m8 l8">
-
         <div class="card-panel" id="map-section">
           <div id='map'></div>
-          <!-- <span class="white-text">MAP
-          </span> -->
         </div>
-
       </div>
       <div class="col s12 m4 l4">
         <div class="card-panel" id="form-section">
-          <span>FORM
-          </span>
+          <form id="newLocation">
+            <div class="input-field">
+              <input id="latitude" type="number" name="latitude">
+              <label for="latitude">Latitude</label>
+            </div>
+            <div class="input-field">
+              <input id="longitude" type="number" name="longitude">
+              <label for="longitude">Longitude</label>
+            </div>
+            <button class="waves-effect waves-light btn" type="submit">Submit</button>
+          </form>
         </div>
         <div class="card-panel" id="filter-section">
           <span>FILTERS
