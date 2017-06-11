@@ -43,7 +43,7 @@ Template.dashboard.onRendered(function() {
   var template = this;
 
   // Use Leaflet images from bevanhunt:leaflet.
-  L.Icon.Default.imagePath = 'packages/bevanhunt_leaflet/images';
+  L.Icon.Default.imagePath = 'packages/bevanhunt_leaflet/images/';
 
   // Render map with default bounds.
   var map = L.map('map');
@@ -61,7 +61,7 @@ Template.dashboard.onRendered(function() {
     detectRetina: true
   }).addTo(map);
 
-  // L.tileLayer.provider('Stamen.Watercolor').addTo(map);
+  L.tileLayer.provider('Stamen.Watercolor').addTo(map);
 
   //   var CartoDB_DarkMatterNoLabels = L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png', {
   // 	attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
