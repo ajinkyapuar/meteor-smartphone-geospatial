@@ -91,16 +91,16 @@ Template.dashboard.onRendered(function() {
       ]);
       marker.smartphone = smartphone;
       marker.smartphone._id = id;
-      marker.on('click', function(e) {
-        handleMarkerClick(e);
-      });
+      // marker.on('click', function(e) {
+      //   handleMarkerClick(e);
+      // });
       marker.addTo(map);
       layers[id] = marker;
     },
-    removed: function(id) {
-      map.removeLayer(layers[id]);
-      delete layers[id];
-    }
+    // removed: function(id) {
+    //   map.removeLayer(layers[id]);
+    //   delete layers[id];
+    // }
   });
 });
 
@@ -115,4 +115,8 @@ Template.dashboard.helpers({
     // return (template.restaurants().count() === 0 && handle.ready());
     return (Template.instance().smartphones.count() === 0 && handle.ready());
   }
+});
+
+Template.dashboard.events({
+  
 });

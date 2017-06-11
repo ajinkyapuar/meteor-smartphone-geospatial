@@ -1,3 +1,5 @@
+import { Meteor } from 'meteor/meteor';
+
 Meteor.publish('smartphones', function(box) {
   // console.log(box);
   check(box, {
