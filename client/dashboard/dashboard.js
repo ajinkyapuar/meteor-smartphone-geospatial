@@ -121,8 +121,17 @@ Template.dashboard.events({
   "submit #newLocation"(event, instance){
     event.preventDefault();
     // console.log("new location");
-    console.log("Lat : " + event.target.latitude.value);
-    console.log("Lon : " + event.target.longitude.value);
+    if(!event.target.latitude.value || !event.target.longitude.value)
+      return Materialize.toast('Both fields required!', 5000);
+
+    // console.log("Lat : " + event.target.latitude.value);
+    // console.log("Lon : " + event.target.longitude.value);
+
+    Meteor.call("Smartphones.insert", event.target.latitude.value, event.target.latitude.value, function (err, res) {
+      console.log(err);
+      console.log(res);
+
+    })
   }
 
 

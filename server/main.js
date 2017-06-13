@@ -12,4 +12,10 @@ Meteor.startup(function() {
       Smartphones.insert(smartphone);
     });
   }
+
+  // Smartphones._ensureIndex({
+  //   'location.coordinates': '2dsphere'
+  // });
+
+
 });
